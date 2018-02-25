@@ -1,0 +1,92 @@
+<DATA>
+
+	<ROW>
+		<id>app1c457d79ddb38f8a3cdef10c687e7741</id>
+		<project_id>80</project_id>
+		<path>/</path>
+		<name>settings.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>app2daf44e732f865f673673766f9f7ec8f</id>
+		<project_id>80</project_id>
+		<path>/views/</path>
+		<name>noteEditor.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb96e427e03f4ca29bcaf3b09f47b88b3</id>
+		<project_id>80</project_id>
+		<path>/</path>
+		<name>index.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appb98ed09e4c0881fa49480f14ea181693</id>
+		<project_id>80</project_id>
+		<path>/</path>
+		<name>source.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appc660fac77b4367993737fb89a2a450d3</id>
+		<project_id>80</project_id>
+		<path>/views/</path>
+		<name>deleteNote.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appc89060333a0f1704e96dca23e31263e6</id>
+		<project_id>80</project_id>
+		<path>/views/</path>
+		<name>noteViewer.view</name>
+		<smart>1</smart>
+		<deleted>1</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appcb3585c2bd1e5fd2982696370f81f434</id>
+		<project_id>80</project_id>
+		<path>/src/APP/Main/</path>
+		<name>noteManager.object</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appd1ea8ba41f2a3c096196ab35ca45cfc8</id>
+		<project_id>80</project_id>
+		<path>/views/</path>
+		<name>MainView.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>appe777c4347ff20c386cae80b03e5ca7a3</id>
+		<project_id>80</project_id>
+		<path>/</path>
+		<name>views.xml</name>
+		<smart>0</smart>
+		<deleted>0</deleted>
+	</ROW>
+
+	<ROW>
+		<id>apped96297fdd9c131d837dc071ab7ef020</id>
+		<project_id>80</project_id>
+		<path>/views/</path>
+		<name>noteExplorer.view</name>
+		<smart>1</smart>
+		<deleted>0</deleted>
+	</ROW>
+</DATA>
