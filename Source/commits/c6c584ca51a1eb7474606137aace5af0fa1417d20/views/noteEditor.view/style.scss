@@ -1,0 +1,24 @@
+.noteEditorContainer {
+	.objTool {
+		display: inline-block;
+		width: 16px;
+		height: 16px;
+		opacity: 0.7;
+		cursor: pointer;
+		background: url('%{media}/icons/devIcons.svg') no-repeat;
+		background-size: cover;
+	}
+	.objTool:hover {
+		opacity: 1.0;
+	}
+	button.objTool {
+		border : none;
+		background-color: transparent;
+	}
+	.objTool.save {
+		background-position: 0px 0px;
+	}
+	.objTool.delete {
+		background-position: 0px -32px;
+	}
+}

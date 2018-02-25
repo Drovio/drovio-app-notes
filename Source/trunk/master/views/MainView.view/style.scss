@@ -1,0 +1,130 @@
+.simpleNotesApplication {
+	& {
+		width: 100%;
+		height: 100%;
+		background-color: #EEE;
+	}
+	.sidebar {
+		width: 30%;
+		height: 100%;
+		float: left;
+		box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		border-right: 1px solid #CCC;
+		background-color: #FFF;
+	}
+	.noteOuterContainer {
+		& {
+			width: 70%;
+			height: 100%;
+			float: right;
+			position: relative;
+		}
+		.toolbar {
+			& {
+				height: 50px;
+				border-bottom: 1px solid #CCC;
+				overflow: auto;
+			}
+			.create_new {
+				& {
+					float: left;
+					margin: 10px 10px;
+				}
+				.expand {
+					float: left;
+					width: 28px;
+					height: 28px;
+					border: 1px solid transparent;
+					transition: all .2s ease-in-out;
+					-webkit-transition: all .2s ease-in-out;
+					-moz-transition: all .2s ease-in-out;
+				}
+				&:hover .expand {
+					background: #FFF;
+					border: 1px solid #CCC;
+					border-radius: 3px;
+					-webkit-border-radius: 3px;
+					-moz-border-radius: 3px;
+					transition: all .2s ease-in-out;
+					-webkit-transition: all .2s ease-in-out;
+					-moz-transition: all .2s ease-in-out;
+				}
+				.expand .ico {
+					float: left;
+					width: 16px;
+					height: 16px;
+					margin: 6px;
+					background: url('%{media}/icons/devIcons.svg') no-repeat center;
+					background-size: cover;
+					background-position: 0px -64px;
+				}
+				.sbutton {
+					float: left;
+					margin: 0px 5px;
+					box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					-moz-box-sizing: border-box;
+					border: 1px solid #5E6570;
+					color: #5E6570;
+					border-radius: 5px;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					cursor: pointer;
+					padding: 5px 10px;
+					line-height: 18px;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					opacity: 0;
+					transition: all .2s ease-in-out;
+					-webkit-transition: all .2s ease-in-out;
+					-moz-transition: all .2s ease-in-out;
+				}
+				.sbutton:hover {
+					background: #5E6570;
+					color: #FFF;
+					transition: all .2s ease-in-out;
+					-webkit-transition: all .2s ease-in-out;
+					-moz-transition: all .2s ease-in-out;
+				}
+				.sbutton.new_private {
+					border-color: #ed5e54;
+					color: #ed5e54;
+				}
+				.sbutton.new_private:hover {
+					background-color: #ed5e54;
+					color: #FFF;
+				}
+				.sbutton.new_public {
+					border-color: #3CB0F7;
+					color: #3CB0F7;
+				}
+				.sbutton.new_public:hover {
+					background-color: #3CB0F7;
+					color: #FFF;
+				}
+				&:hover .sbutton {
+					opacity: 1;
+					transition: all .2s ease-in-out;
+					-webkit-transition: all .2s ease-in-out;
+					-moz-transition: all .2s ease-in-out;
+				}
+			}
+			.hd {
+				text-align: right;
+				color: #888;
+				line-height: 18px;
+				font-size: 12px;
+				margin: 16px 20px;
+			}
+		}
+		.noteContainer {
+			position: absolute;
+			top: 51px;
+			bottom: 0px;
+			width: 100%;
+		}
+	}
+}

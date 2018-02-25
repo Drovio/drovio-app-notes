@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view id="noteExplorer"><sdk_dependencies><dependency library="API" object="Profile"></dependency><dependency library="UI" object="Apps"></dependency></sdk_dependencies><app_dependencies><dependency library="APP" object="Main"></dependency></app_dependencies></view>

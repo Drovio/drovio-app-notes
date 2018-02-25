@@ -1,0 +1,133 @@
+.noteExplorer {
+	& {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+	.toolbar {
+		& {
+			height: 50px;
+			border-bottom: 1px solid #CCC;
+			overflow: auto;
+			background-color: #EEE;
+		}
+		.logo {
+			float: left;
+			margin: 10px 5px;
+			width: 30px;
+			height: 30px;
+			background: url('%{media}/logo.svg') no-repeat center;
+			background-size: cover;
+		}
+		.settings {
+			float: right;
+			margin: 15px 8px;
+			width: 20px;
+			height: 20px;
+			background: url('%{media}/icons/toolbarIcons.svg') no-repeat center;
+			background-position: 0px 0px;
+			background-size: cover;
+			cursor: pointer;
+		}
+		.searchContainer {
+			& {
+				background: #FFF;
+				overflow: auto;
+				border: 1px solid #CCC;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				margin: 10px;
+				position: relative;
+			}
+			.searchIco {
+				position: absolute;
+				top: 0px;
+				right: 0px;
+				cursor: pointer;
+				width: 20px;
+				height: 20px;
+				background: url('%{media}/icons/toolbarIcons.svg') no-repeat center;
+				background-size: cover;
+				background-position: 0px -20px;
+				overflow: hidden;
+				margin: 4px;
+			}
+			.searchInput {
+				float: left;
+				width: 100%;
+				line-height: 16px;
+				font-size: 12px;
+				padding: 6px;
+				padding-right: 28px;
+				border: none;
+				outline: none;
+				color: #555;
+				transition: all .2s ease-in-out;
+				-webkit-transition: all .2s ease-in-out;
+				-moz-transition: all .2s ease-in-out;
+				box-sizing: border-box;
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+			}
+		}
+	}
+	.noteList {
+		& {
+			position: absolute;
+			top: 51px;
+			bottom: 0px;
+			width: 100%;
+		}
+		.hd {
+			font-size: 14px;
+			text-align: center;
+			color: #555;
+			margin-top: 50px;
+			font-weight: normal;
+		}
+		.ntrow {
+			& {
+				padding: 10px;
+				border-bottom: 1px solid #CCC;
+				cursor: pointer;
+			}
+			&.selected,
+			&:hover {
+				background-color: #F0F0F0;
+			}
+			.ntico {
+				float: left;
+				width: 10px;
+				height: 10px;
+				margin: 3px;
+				margin-right: 5px;
+			}
+			&.public .ntico {
+				background: url('%{media}/icons/public.svg') no-repeat center;
+				background-size: cover;
+				opacity: 0.7;
+			}
+			.ntheader {
+				margin-left: 20px;
+			}
+			.ntdate {
+				float: right;
+				color: #999;
+				line-height: 16px;
+			}
+			.nttitle {
+				line-height: 16px;
+				font-weight: bold;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.ntauthor {
+				color: #999;
+				clear: both;
+				margin-top: 2px;
+			}
+		}
+	}
+}

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manual library="APP" package="Main" namespace="\">
+  <class name="noteManager" abstract="">
+    <info>
+      <version>0.2</version>
+      <build>2</build>
+      <datecreated>1440324664</datecreated>
+      <daterevised>1440411783</daterevised>
+      <extends/>
+      <implements/>
+      <throws/>
+      <title>Note manager</title>
+      <description>Handles all notes for the application, both team and personal notes.</description>
+      <deprecated/>
+    </info>
+    <constants>
+      <const type="integer" name="PUBLIC_NOTE">
+        <description>Public note.</description>
+      </const>
+      <const type="integer" name="PRIVATE_NOTE">
+        <description>Personal note.</description>
+      </const>
+    </constants>
+    <properties>
+      <scope type="public"/>
+      <scope type="protected"/>
+      <scope type="private">
+        <prop type="string" name="noteID">
+          <description>The current note id.</description>
+        </prop>
+        <prop type="fileManager" name="fileManager">
+          <description>The fileManager instance.</description>
+        </prop>
+        <prop type="DOMParser" name="xmlParser">
+          <description>The DOMParser instance.</description>
+        </prop>
+      </scope>
+    </properties>
+    <methods>
+      <scope type="public">
+        <method name="__construct" returntype="void">
+          <description>Create a new instance of the note manager.</description>
+          <parameters>
+            <parameter name="$type" type="integer" defaultvalue="">
+              <description>The note type.
+This defines whether it is a team/public note or a personal/private note.</description>
+            </parameter>
+            <parameter name="$noteID" type="string" defaultvalue="">
+              <description>The note id.
+Leave empty for new notes.
+It is empty by default.</description>
+            </parameter>
+          </parameters>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="create" returntype="boolean">
+          <description>Create a new note.</description>
+          <parameters>
+            <parameter name="$note" type="string" defaultvalue="">
+              <description>The note contents.</description>
+            </parameter>
+          </parameters>
+          <returndescription>True on success, false on failure.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="get" returntype="string">
+          <description>Get the note contents.</description>
+          <parameters/>
+          <returndescription>The note contents.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="info" returntype="array">
+          <description>Get note info including author, time created and updated.</description>
+          <parameters/>
+          <returndescription>The note info array.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="update" returntype="boolean">
+          <description>Update the note contents.</description>
+          <parameters>
+            <parameter name="$note" type="string" defaultvalue="">
+              <description>The new note contents.</description>
+            </parameter>
+          </parameters>
+          <returndescription>True on success, false on failure.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="getAllNotes" returntype="array">
+          <description>Get all notes from the index file.</description>
+          <parameters/>
+          <returndescription>An array of all notes by noteID and note title (snippet).</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+      <scope type="protected"/>
+      <scope type="private">
+        <method name="createTitle" returntype="string">
+          <description>Create a snippet title given the note contents.</description>
+          <parameters>
+            <parameter name="$note" type="string" defaultvalue="">
+              <description>The note contents.</description>
+            </parameter>
+          </parameters>
+          <returndescription>The snippet title.</returndescription>
+          <throws/>
+          <deprecated/>
+        </method>
+        <method name="initializeApp" returntype="void">
+          <description>Initialize the application files by creating the index file.</description>
+          <parameters/>
+          <returndescription/>
+          <throws/>
+          <deprecated/>
+        </method>
+      </scope>
+    </methods>
+  </class>
+</manual>
